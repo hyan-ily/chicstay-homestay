@@ -1,0 +1,8 @@
+{
+  "name": "Chicstay - Hệ Thống Quản Lý Homestay",
+  "description": "Hệ thống quản lý homestay chuyên nghiệp Chicstay dành cho Quản lý / Admin: quản lý đơn đặt phòng, dịch vụ, thanh toán & VietQR, hồ sơ khách hàng, chatbot hỗ trợ và quản lý CSDL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
