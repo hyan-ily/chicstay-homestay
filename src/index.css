@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+/* Thanh cuộn tinh tế, thanh lịch cho modal và các danh sách cuộn */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* ==========================================================================
+   ĐỊNH DẠNG IN HÓA ĐƠN & PHIẾU CỌC CHUYÊN NGHIỆP (@media print)
+   ========================================================================== */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 15mm;
+  }
+
+  /* Reset toàn bộ layout trình duyệt để in toàn vẹn nội dung */
+  html, body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    height: auto !important;
+    min-height: auto !important;
+    width: 100% !important;
+  }
+
+  /* Khi có modal in đang mở, ẩn toàn bộ app nền #root để chỉ in trang phiếu */
+  body:has(#chicstay-deposit-modal-root) #root,
+  body:has(#chicstay-invoice-modal-root) #root,
+  body:has(#chicstay-checkout-modal-root) #root,
+  body.has-print-modal #root {
+    display: none !important;
+  }
+
+  /* Ẩn header điều hướng, thanh menu, chatbot, toast, nút bấm và header điều khiển của modal */
+  header,
+  aside,
+  nav,
+  footer,
+  #chatbot-drawer,
+  button,
+  .print-hidden,
+  .invoice-modal-header {
+    display: none !important;
+  }
+
+  /* Thiết lập modal hiển thị tự nhiên dạng trang văn bản in khổ A4 */
+  #chicstay-invoice-modal-root,
+  #chicstay-deposit-modal-root,
+  #chicstay-checkout-modal-root {
+    position: static !important;
+    display: block !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    inset: auto !important;
+    backdrop-filter: none !important;
+    z-index: auto !important;
+    box-shadow: none !important;
+  }
+
+  .invoice-modal-dialog {
+    position: static !important;
+    display: block !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    max-height: none !important;
+    height: auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #ffffff !important;
+  }
+
+  /* Nội dung phiếu thu đặt cọc & hóa đơn thanh toán */
+  #chicstay-printable-invoice,
+  #chicstay-printable-deposit,
+  #chicstay-printable-checkout {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+
+  /* Giữ nguyên màu nền thẻ và bảng khi in */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Tránh ngắt trang giữa dòng */
+  tr, .avoid-page-break {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}

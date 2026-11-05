@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Chicstay - plus",
+  "description": "Hệ thống quản lý homestay chuyên nghiệp Chicstay dành cho Quản lý / Admin: quản lý đơn đặt phòng, dịch vụ, thanh toán \u0026 VietQR, hồ sơ khách hàng, chatbot hỗ trợ và quản lý CSDL.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

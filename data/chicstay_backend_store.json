@@ -1,0 +1,50 @@
+{
+  "bookings": [
+    {
+      "MaDon": "DP20250001",
+      "MaPhong": "P102",
+      "TrangThaiDon": "Đã hủy",
+      "ThoiGianTaoDon": "2025-06-02 10:00:00",
+      "DaThu": 0,
+      "TienCocYeuCau": 135000,
+      "lichSuThayDoi": [
+        {
+          "id": "LS_CRON_1793715375572_DP20250001",
+          "thoiGian": "2026-11-03T14:16:15.551Z",
+          "nguoiThucHien": "Hệ thống Cron Tự động (Asia/Ho_Chi_Minh)",
+          "noiDungThayDoi": "Tự động hủy đơn do quá hạn xác nhận tiền cọc 12 giờ (Thời hạn: +12h kể từ thời điểm tạo đơn). Tự động giải phóng phòng về Sẵn sàng."
+        }
+      ],
+      "LyDoHuy": "Quá hạn xác nhận tiền cọc 12 giờ",
+      "ThoiGianHuy": "2026-11-03T14:16:15.551Z"
+    },
+    {
+      "MaDon": "DP20250002",
+      "MaPhong": "P202",
+      "TrangThaiDon": "Đã hủy",
+      "ThoiGianTaoDon": "2025-06-03 14:00:00",
+      "DaThu": 0,
+      "TienCocYeuCau": 780000,
+      "lichSuThayDoi": [
+        {
+          "id": "LS_CRON_1793715375572_DP20250002",
+          "thoiGian": "2026-11-03T14:16:15.551Z",
+          "nguoiThucHien": "Hệ thống Cron Tự động (Asia/Ho_Chi_Minh)",
+          "noiDungThayDoi": "Tự động hủy đơn do quá hạn xác nhận tiền cọc 12 giờ (Thời hạn: +12h kể từ thời điểm tạo đơn). Tự động giải phóng phòng về Sẵn sàng."
+        }
+      ],
+      "LyDoHuy": "Quá hạn xác nhận tiền cọc 12 giờ",
+      "ThoiGianHuy": "2026-11-03T14:16:15.551Z"
+    }
+  ],
+  "rooms": [
+    {
+      "MaPhong": "P102",
+      "TrangThaiPhong": "Sẵn sàng"
+    },
+    {
+      "MaPhong": "P202",
+      "TrangThaiPhong": "Sẵn sàng"
+    }
+  ]
+}
